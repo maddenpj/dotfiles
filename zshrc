@@ -17,4 +17,4 @@ tic ~/.iterm2/xterm-256color-italic.terminfo
 export PATH="/usr/local/bin:/bin:/usr/sbin:/sbin:/usr/bin"
 
 source "$HOME/.zsh/alias.sh"
-source "$HOME/.zsh/alias.sh"
+source "$HOME/.zsh/env.sh"
