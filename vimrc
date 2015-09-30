@@ -188,8 +188,8 @@ map <silent> <LocalLeader>lo :NumbersOnOff<CR>
 map <silent> <LocalLeader>rp :call RainbowEnable()<CR>
 map <silent> <LocalLeader>sc :SyntasticCheck<CR>
 map <silent> <LocalLeader>tb :TagbarToggle<CR>
-map <silent> <LocalLeader>tp :TagbarCurrentTag "p"<CR>
-noremap <C-[> :TagbarCurrentTag "p"<CR>
+" map <silent> <LocalLeader>tp :TagbarCurrentTag "p"<CR>
+" noremap <C-[> :TagbarCurrentTag "p"<CR>
 map <silent> <LocalLeader>ta :Tabularize assignment<CR>
 
 " inoremap <C-[> <C-O>:TagbarCurrentTag "p"<CR>
