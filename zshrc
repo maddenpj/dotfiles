@@ -9,6 +9,9 @@ plugins=(git zshmarks sprunge scala osx sbt python)
 source $ZSH/oh-my-zsh.sh
 source "$HOME/.zsh/alias.sh"
 source "$HOME/.zsh/env.sh"
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+fpath=(/usr/local/share/zsh-completions $fpath)
 
 tic ~/.iterm-256color-italic.terminfo
 
