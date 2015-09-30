@@ -17,3 +17,4 @@
   - [git submodule update --init --recursive, Installing submodules]
   - ["mkdir -p ~/.vim/autoload", Pathogen]
   - ["curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim", Installing Pathogen]
+  - ["brew install zsh-completions zsh-syntax-highlighting", Zsh highlights]
