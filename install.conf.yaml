@@ -1,12 +1,13 @@
 - clean: ['~']
 
 - link:
-    ~/.dotfiles: ''
     ~/.tmux.conf: tmux.conf
     ~/.tmux: tmux/
     ~/.vim: vim/
     ~/.vimrc: vimrc
     ~/.zsh: zsh/
+    ~/.oh-my-/themes/itg.zsh-theme: zsh/itg.zsh-theme
+    ~/.oh-my-/themes/itg-text.zsh-theme: zsh/itg-text.zsh-theme
     ~/.zshrc: zshrc
     ~/.iterm-256color-italic.terminfo: xterm-256color-italic.terminfo
     ~/.gitignore: gitignore
