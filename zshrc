@@ -10,7 +10,7 @@ source $ZSH/oh-my-zsh.sh
 source "$HOME/.zsh/alias.sh"
 source "$HOME/.zsh/env.sh"
 
-tic ~/.iterm2/xterm-256color-italic.terminfo
+tic ~/.iterm-256color-italic.terminfo
 
 
 export PATH="/usr/local/bin:/bin:/usr/sbin:/sbin:/usr/bin"
