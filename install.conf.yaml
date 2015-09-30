@@ -3,12 +3,14 @@
 - link:
     ~/.dotfiles: ''
     ~/.tmux.conf: tmux.conf
-    ~/.tmux.conf.reset: tmux/reset.conf
+    ~/.tmux: tmux/
     ~/.vim: vim/
     ~/.vimrc: vimrc
     ~/.zsh: zsh/
     ~/.zshrc: zshrc
     ~/.iterm-256color-italic.terminfo: xterm-256color-italic.terminfo
+    ~/.gitignore: gitignore
+    ~/.gitconfig: gitconfig
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

@@ -52,3 +52,6 @@
 [submodule "vim/bundle/vim-tmux-navigator"]
 	path = vim/bundle/vim-tmux-navigator
 	url = git@github.com:christoomey/vim-tmux-navigator.git
+[submodule "tmux/tmux-copycat"]
+	path = tmux/tmux-copycat
+	url = https://github.com/tmux-plugins/tmux-copycat
