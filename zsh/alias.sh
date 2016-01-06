@@ -5,4 +5,5 @@ alias j='jump'
 alias l='showmarks'
 alias h='history'
 alias wget-rip='wget -mkEpnp -e robots=off'
+alias gs='git status'
 function hs { history | grep -i $* }
