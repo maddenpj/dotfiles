@@ -5,7 +5,7 @@ DISABLE_AUTO_TITLE="true"
 AUTO_TITLE="false"
 # COMPLETION_WAITING_DOTS="true"
 
-plugins=(git zshmarks sprunge scala osx sbt python)
+plugins=(git zshmarks sprunge scala osx sbt python composer)
 source $ZSH/oh-my-zsh.sh
 source "$HOME/.zsh/alias.sh"
 source "$HOME/.zsh/env.sh"
@@ -16,4 +16,7 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 tic ~/.iterm-256color-italic.terminfo
 
 
-export PATH="/usr/local/bin:/bin:/usr/sbin:/sbin:/usr/bin"
+export PATH=$PATH:"/usr/local/bin"
+# :/bin:/usr/sbin:/sbin:/usr/bin"
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
