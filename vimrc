@@ -115,6 +115,7 @@ autocmd BufEnter *.scala call RainbowEnable()
 " autocmd FileType python setlocal tabstop=2 shiftwidth=2 softtabstop=2
 " autocmd FileType javascript setlocal tabstop=4 shiftwidth=4 softtabstop=4 noexpandtab
 autocmd FileType php setlocal tabstop=4 shiftwidth=4 softtabstop=4
+autocmd FileType liquid setlocal expandtab
 autocmd FileType cpp colorscheme vividchalk
 autocmd FileType haskell set autoindent
 autocmd FileType scala set autoindent
@@ -139,6 +140,7 @@ cnoremap <C-D> <S-Left>
 nnoremap <C-bar> <Nop>
 " Repeat . command for visual selection
 vnoremap . :normal .<CR>
+nnoremap <C-L> :w<CR>
 
 nnoremap <expr> gp '`[' . strpart(getregtype(), 0, 1) . '`]'
 set pastetoggle=<F2>
