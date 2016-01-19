@@ -116,7 +116,7 @@ autocmd BufEnter *.scala call RainbowEnable()
 " autocmd FileType javascript setlocal tabstop=4 shiftwidth=4 softtabstop=4 noexpandtab
 autocmd FileType php setlocal tabstop=4 shiftwidth=4 softtabstop=4
 autocmd FileType liquid setlocal expandtab
-autocmd FileType cpp colorscheme vividchalk
+" autocmd FileType cpp colorscheme vividchalk
 autocmd FileType haskell set autoindent
 autocmd FileType scala set autoindent
 autocmd QuickFixCmdPost *grep* cwindow

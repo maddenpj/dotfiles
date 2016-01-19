@@ -61,3 +61,6 @@
 [submodule "vim/bundle/bufexplorer.zip"]
 	path = vim/bundle/bufexplorer.zip
 	url = https://github.com/vim-scripts/bufexplorer.zip
+[submodule "vim/bundle/vim-cpp-enhanced-highlight"]
+	path = vim/bundle/vim-cpp-enhanced-highlight
+	url = https://github.com/octol/vim-cpp-enhanced-highlight
