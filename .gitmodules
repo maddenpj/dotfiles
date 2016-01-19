@@ -7,6 +7,7 @@
 [submodule "vim/bundle/ZoomWin"]
 	path = vim/bundle/ZoomWin
 	url = https://github.com/vim-scripts/ZoomWin
+	ignore = dirty
 [submodule "vim/bundle/ctrlp.vim"]
 	path = vim/bundle/ctrlp.vim
 	url = https://github.com/kien/ctrlp.vim
@@ -49,6 +50,7 @@
 [submodule "vim/bundle/vim-startify"]
 	path = vim/bundle/vim-startify
 	url = https://github.com/mhinz/vim-startify
+	ignore = dirty
 [submodule "vim/bundle/vim-tmux-navigator"]
 	path = vim/bundle/vim-tmux-navigator
 	url = git@github.com:christoomey/vim-tmux-navigator.git
@@ -61,6 +63,13 @@
 [submodule "vim/bundle/bufexplorer.zip"]
 	path = vim/bundle/bufexplorer.zip
 	url = https://github.com/vim-scripts/bufexplorer.zip
+	ignore = dirty
 [submodule "vim/bundle/vim-cpp-enhanced-highlight"]
 	path = vim/bundle/vim-cpp-enhanced-highlight
 	url = https://github.com/octol/vim-cpp-enhanced-highlight
+[submodule "vim-endwise"]
+	path = vim-endwise
+	url = https://github.com/tpope/vim-endwise.git
+[submodule "vim-closer"]
+	path = vim-closer
+	url = https://github.com/rstacruz/vim-closer.git
