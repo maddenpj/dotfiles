@@ -8,8 +8,8 @@ syntax on
 filetype plugin indent on
 
 " set t_Co=16 " Term colors
-set background=dark
 set t_Co=256 " Term colors
+set background=dark
 " let g:molokai_original = 1
 colorscheme molokai
 
@@ -34,6 +34,15 @@ set showcmd
 set list listchars=tab:\┊\ 
 set noshowmode
 set laststatus=2
+
+" let g:PaperColor_Dark_Override = {
+  " 'background' : '#1c1c1c',
+  " 'cursorline' : '#abcdef',
+  " 'matchparen' : '#3a3a3a',
+  " 'comment' : '#5f875f'
+" }
+" PHP
+" let g:php_var_selector_is_identifier = 1
 
 " Startify settings
 let g:startify_change_to_dir = 0
@@ -206,14 +215,34 @@ map <silent> <LocalLeader>ta :Tabularize assignment<CR>
 highlight CursorLineNr cterm=underline ctermbg=236 ctermfg=11 guifg=#073642
 highlight NonText cterm=none ctermfg=0 guifg=#073642
 highlight SpecialKey cterm=none ctermfg=8 guifg=#073642 guibg=#002b36
-autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
-autocmd BufRead,InsertLeave * match ExtraWhitespace /\s\+$/
 
 " Custom highlighting
-highlight ExtraWhitespace ctermbg=red guibg=red
-autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
-highlight String ctermfg=227
-autocmd ColorScheme * highlight String ctermfg=227
+" highlight ExtraWhitespace ctermbg=red guibg=red
+" autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
+" highlight String ctermfg=227
+" autocmd ColorScheme * highlight String ctermfg=227
+
+function! SyntaxOverride()
+  autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+  autocmd BufRead,InsertLeave * match ExtraWhitespace /\s\+$/
+  highlight ExtraWhitespace ctermbg=red guibg=red
+  highlight String ctermfg=227
+endfunction
+
+
+
+
+let php_var_selector_is_identifier = 1
+function! PhpSyntaxOverride()
+  highlight phpParent ctermfg=241
+  highlight phpOperator ctermfg=81
+  highlight phpMemberSelector ctermfg=81
+  highlight String ctermfg=227
+endfunction
+
+autocmd ColorScheme * call SyntaxOverride()
+autocmd FileType php call PhpSyntaxOverride()
+
 
 " Highlight too-long lines
 " autocmd BufRead,InsertEnter,InsertLeave * 2match LineLengthError /\%126v.*/
@@ -222,20 +251,22 @@ autocmd ColorScheme * highlight String ctermfg=227
 
 " Scala Settings
 " highlight link scalaCapitalWord
-highlight scalaExternal ctermfg=1
-highlight scalaInstanceDeclaration ctermfg=42
-highlight scalaKeywordModifier ctermfg=197 cterm=underline
-highlight scalaCaseFollowing ctermfg=208
-autocmd ColorScheme * highlight scalaExternal ctermfg=1
-autocmd ColorScheme * highlight scalaInstanceDeclaration ctermfg=42
-autocmd ColorScheme * highlight scalaKeywordModifier ctermfg=197 cterm=underline
-autocmd ColorScheme * highlight scalaCaseFollowing ctermfg=208
+" highlight scalaExternal ctermfg=1
+" highlight scalaInstanceDeclaration ctermfg=42
+" highlight scalaKeywordModifier ctermfg=197 cterm=underline
+" highlight scalaCaseFollowing ctermfg=208
+" autocmd ColorScheme * highlight scalaExternal ctermfg=1
+" autocmd ColorScheme * highlight scalaInstanceDeclaration ctermfg=42
+" autocmd ColorScheme * highlight scalaKeywordModifier ctermfg=197 cterm=underline
+" autocmd ColorScheme * highlight scalaCaseFollowing ctermfg=208
+
+
+
 
 " Status bar
 function! SyntaxItem()
     return synIDattr(synID(line("."),col("."),1),"name")
 endfunction
-set laststatus=2
 
 " Startify
 let g:startify_custom_header = [

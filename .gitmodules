@@ -10,7 +10,7 @@
 	ignore = dirty
 [submodule "vim/bundle/ctrlp.vim"]
 	path = vim/bundle/ctrlp.vim
-	url = https://github.com/kien/ctrlp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim.git
 [submodule "vim/bundle/dash.vim"]
 	path = vim/bundle/dash.vim
 	url = https://github.com/rizzatti/dash.vim.git
@@ -76,3 +76,9 @@
 [submodule "vim/bundle/delimitMate"]
 	path = vim/bundle/delimitMate
 	url = https://github.com/Raimondi/delimitMate.git
+[submodule "vim/bundle/papercolor-theme"]
+	path = vim/bundle/papercolor-theme
+	url = https://github.com/NLKNguyen/papercolor-theme.git
+[submodule "vim/bundle/php.vim"]
+	path = vim/bundle/php.vim
+	url = https://github.com/StanAngeloff/php.vim.git
