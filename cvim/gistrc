@@ -1,0 +1,17 @@
+command g tabnew google
+let searchalias g = "google"
+let blacklists = ["*://github.com/*","*://*.github.com/*","http://45.55.219.52/*"]
+map <C-d> scrollPageDown
+map <C-e> scrollPageUp
+imap <C-w> deleteWord
+site '*://*.reddit.com/*' {
+      unmap j
+      unmap k
+      unmap ]
+      unmap ]]
+      unmap [
+      unmap [[
+      unmap c
+      unmap x
+      set numerichints
+}
