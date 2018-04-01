@@ -88,3 +88,6 @@
 [submodule "vim/bundle/vim-twig"]
 	path = vim/bundle/vim-twig
 	url = https://github.com/evidens/vim-twig.git
+[submodule "vim/bundle/vim-pico8-syntax"]
+	path = vim/bundle/vim-pico8-syntax
+	url = https://github.com/justinj/vim-pico8-syntax.git
