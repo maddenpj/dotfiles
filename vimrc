@@ -72,6 +72,7 @@ let g:scala_use_builtin_tagbar_defs = 0
 " Airline Settings
 let g:airline_theme = 'murmur'
 let g:airline_powerline_fonts = 1
+let g:WebDevIconsUnicodeDecorateFileNodesDefaultSymbol = 'ƛ'
 
 " Rainbow Parens " Extreme Yellow
 let g:rbpt_colorpairs = [
