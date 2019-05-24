@@ -20,3 +20,9 @@ tic ~/.iterm-256color-italic.terminfo
 
 export PATH=$PATH:"$HOME/.bin:$HOME/.jenv/bin"
 eval "$(jenv init -)"
+jenv shell 1.8
+export JAVA_HOME="$HOME/.jenv/versions/`jenv version-name`"
+
+# gcc 4.6 breaks without this
+# export MACOSX_DEPLOYMENT_TARGET=10.9
+

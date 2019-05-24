@@ -51,8 +51,16 @@ autocmd User Startified setlocal buftype=
 " BufExplorer
 " let g:bufExplorerShowRelativePath = 0  " Show relative paths.
 
+" Ctrl-P
+let g:ctrlp_match_window = 'top,order:ttb'
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/](vendor|target)$',
+  \ 'file': '\v\.(cache|class)$',
+ \ }
+
+
 " NERD Tree Settings
-let NERDTreeIgnore = ['\.pyc$', '\.o$', '\.class$', '\.xml$']
+let NERDTreeIgnore = ['\.pyc$', '\.o$', '\.class$', '\.xml$', '\.cache$', '^target\/.*']
 
 " NERD Commenter Settings
 let NERDSpaceDelims=1
@@ -109,13 +117,6 @@ let g:syntastic_mode_map = {
       \ "passive_filetypes": [] }
 let g:syntastic_scala_checkers = ["scalac"]
 " let g:syntastic_php_checkers = ["php"]
-
-" Ctrl-P
-let g:ctrlp_match_window = 'top,order:ttb'
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/](vendor)$',
- \ }
-
 
 """""""""""""""""""""
 " FileType Settings "
